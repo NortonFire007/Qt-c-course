@@ -23,10 +23,6 @@ Widget::Widget(QWidget *parent)
     input->move(20, 15);
 
     output = new QLineEdit(this);
-    //output->setAutoFillBackground(false);
-    //output->setAttribute(Qt::WA_NoSystemBackground);
-    //output->setAttribute(Qt::WA_TranslucentBackground);
-    //output->setStyleSheet("background-color: rgba(15, 8, 45, 10);");
     output->setMinimumSize(132, 21);
     output->setMaximumSize(132, 21);
     output->setValidator(doubleValidator);
@@ -55,7 +51,6 @@ Widget::Widget(QWidget *parent)
     radioBtnGroupTColor = new QGroupBox("Text color", this);
     radioBtnGroupTColor->move(20, 40);
 
-    //radioVBoxTColor = new QVBoxLayout(radioBtnGroupTColor);
     radioHBoxTColor = new QHBoxLayout(radioBtnGroupTColor);
 
     for (int i = 0; i < 3; ++i) {
